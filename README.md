@@ -1,8 +1,9 @@
 # Refactoring Fowler
-A C# translation from JavaScript of the examples in Martin Fowler's "Refactoring" book, 2nd Edition
+A C# translation from JavaScript of the examples in Martin Fowler's "Refactoring" :book:, 2nd Edition
 
 ## How the Code is translated
 The C# code follows the JavaScript as closely as possible
+
 The C# code should be "good style", specifically [ReSharper](https://www.jetbrains.com/resharper) should have no warnings
 
 ## Target Environment
