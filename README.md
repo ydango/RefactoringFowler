@@ -13,5 +13,5 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 ## Testing
 Unit testing is vital to refactoring and have been added even where Fowler didn't include them (using a Class_Test.cs naming convention). In real life it's often better to separate Unit Tests into separate modules but for the purposes of learning from Fowler's book I think close proximity of the Test code to the Class under test helps.
 
-## Licencse
+## License
 Using the [MIT](https://opensource.org/licenses/MIT) license, as used by .NET Core
