@@ -8,6 +8,7 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 
 ## Target Environment
 * [Visual Studio Code](https://code.visualstudio.com) v1.27+
+* [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1+
 * [NUnit](https://nunit.org) v3.10+
 
