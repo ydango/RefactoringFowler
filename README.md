@@ -8,9 +8,9 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 
 ## Target Environment
 * [Visual Studio Code](https://code.visualstudio.com) v1.27+
-* [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1+
-* [NUnit](https://nunit.org) v3.10+
+* [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.16.1+
+* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1.401+
+* [NUnit](https://nunit.org) v3.10.1+
 
 ## Testing
 Unit testing is vital to refactoring and have been added even where Fowler didn't include them (using a Class_Test.cs naming convention). In real life it's often better to separate Unit Tests into separate modules but for the purposes of learning from Fowler's book I think close proximity of the Test code to the Class under test helps.
