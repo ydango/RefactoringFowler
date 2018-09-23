@@ -7,7 +7,7 @@ The C# code follows the JavaScript as closely as possible
 The C# code should be "good style", specifically [ReSharper](https://www.jetbrains.com/resharper) should have no warnings
 
 ## Target Environment
-* [Visual Studio Code](https://code.visualstudio.com) v1.27+
+* [Visual Studio Code](https://code.visualstudio.com) v1.27+ or Visual Studio 2017 v15.8.4+ 
 * [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.16.1+
 * C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1.401+
 * [NUnit](https://nunit.org) v3.10.1+
@@ -20,6 +20,9 @@ Unit testing is vital to refactoring and have been added even where Fowler didn'
 * Install-Package NUnit -Version 3.10.1
 * Install-Package NUnit3TestAdapter -Version 3.10.0
 * Install-Package Microsoft.NET.Test.Sdk -Version 15.8.0
+
+## Continuous Integration
+[Appveyor](https://www.appveyor.com) using appveyor.yaml for Visual Studio 2017
 
 ## License
 Using the [MIT](https://opensource.org/licenses/MIT) license, as used by .NET Core
