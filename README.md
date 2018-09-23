@@ -29,8 +29,6 @@ Unit testing is vital to refactoring and have been added even where Fowler didn'
 [Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
 
 [![Build status](https://ci.appveyor.com/api/projects/status/v3yc51dovaje1jpw/branch/master?svg=true)](https://ci.appveyor.com/project/ydango/refactoringfowler)
-
-[![Coveralls](https://coveralls.io/repos/github/ydango/refactoringfowler/badge.svg?branch=master)](https://coveralls.io/github/ydango/refactoringfowler?branch=master) |
   
 [![Build history](https://buildstats.info/appveyor/chart/ydango/refactoringfowler)](https://ci.appveyor.com/project/ydango/refactoringfowler/history)
 
