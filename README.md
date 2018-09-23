@@ -28,5 +28,9 @@ Unit testing is vital to refactoring and have been added even where Fowler didn'
 ## Continuous Integration
 [Appveyor](https://www.appveyor.com) using appveyor.yaml for Visual Studio 2017
 
+[![Build status](https://ci.appveyor.com/api/projects/status/v3yc51dovaje1jpw/branch/master?svg=true)](https://ci.appveyor.com/project/ydango/refactoringfowler)
+  
+[![Build history](https://buildstats.info/appveyor/chart/ydango/refactoringfowler)](https://ci.appveyor.com/project/ydango/refactoringfowler/history)
+
 ## License
 Using the [MIT](https://opensource.org/licenses/MIT) license, as used by .NET Core
