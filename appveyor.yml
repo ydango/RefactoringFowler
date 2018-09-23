@@ -5,7 +5,7 @@ nuget:
   
 build:
   parallel: true
-  verbosity: verbose
+  verbosity: detailed
 
 before_build:
   - nuget restore
