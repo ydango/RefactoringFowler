@@ -17,6 +17,8 @@ environment:
     
 after_test: 
 # generate report for NUnit testing framework:
+  - cmd: pwd
+  - cmd: dir packages
   - cmd: dir packages\OpenCover\4.6.519\tools
   - cmd: dir packages\NUnit.ConsoleRunner\3.9.0\tools
   - cmd: dir Chapter1\bin\debug\netcoreapp2.1
