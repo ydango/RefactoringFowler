@@ -26,9 +26,11 @@ Unit testing is vital to refactoring and have been added even where Fowler didn'
 * Install-Package Microsoft.NET.Test.Sdk -Version 15.8.0
 
 ## Continuous Integration
-[Appveyor](https://www.appveyor.com) using appveyor.yaml for Visual Studio 2017
+[Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
 
 [![Build status](https://ci.appveyor.com/api/projects/status/v3yc51dovaje1jpw/branch/master?svg=true)](https://ci.appveyor.com/project/ydango/refactoringfowler)
+
+[![Coveralls](https://coveralls.io/repos/github/ydango/refactoringfowler/badge.svg?branch=master)](https://coveralls.io/github/ydango/refactoringfowler?branch=master) |
   
 [![Build history](https://buildstats.info/appveyor/chart/ydango/refactoringfowler)](https://ci.appveyor.com/project/ydango/refactoringfowler/history)
 
