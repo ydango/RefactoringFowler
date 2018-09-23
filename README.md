@@ -7,10 +7,14 @@ The C# code follows the JavaScript as closely as possible
 The C# code should be "good style", specifically [ReSharper](https://www.jetbrains.com/resharper) should have no warnings
 
 ## Target Environment
-* [Visual Studio Code](https://code.visualstudio.com) v1.27+ or Visual Studio 2017 v15.8.4+ 
-* [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.16.1+
-* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1.401+
-* [NUnit](https://nunit.org) v3.10.1+
+.NET Core 2.1
+
+### Build
+* [Visual Studio Code](https://code.visualstudio.com) v1.27+ with [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.16+
+* Visual Studio 2017 v15.8+ 
+### Dependencies
+* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1+
+* [NUnit](https://nunit.org) v3.10+
 
 ## Testing
 Unit testing is vital to refactoring and have been added even where Fowler didn't include them (using a Class_Test.cs naming convention). In real life it's often better to separate Unit Tests into separate modules but for the purposes of learning from Fowler's book I think close proximity of the Test code to the Class under test helps.
