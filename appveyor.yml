@@ -17,13 +17,6 @@ environment:
     
 after_test: 
 # generate report for NUnit testing framework:
-  - cmd: pwd
-  - cmd: dir ..\..
-  - cmd: dir packages
-  - cmd: dir packages\OpenCover\4.6.519\tools
-  - cmd: dir packages\NUnit.ConsoleRunner\3.9.0\tools
-  - cmd: dir Chapter1\bin\debug\netcoreapp2.1
-  - cmd: dir packages\coveralls.io\1.4.2\tools
-  - cmd: packages\OpenCover\4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"packages\NUnit.ConsoleRunner\3.9.0\tools\nunit3-console.exe" -targetargs:"/domain:single Chapter1\bin\debug\netcoreapp2.1\Chapter1.dll" -output:coverage.xml
+  - cmd: C:\Users\appveyor\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"C:\Users\appveyor\.nuget\packages\NUnit.ConsoleRunner\3.9.0\tools\nunit3-console.exe" -targetargs:"/domain:single Chapter1\bin\debug\netcoreapp2.1\Chapter1.dll" -output:coverage.xml
 # pass report to coveralls.io:
-  - cmd: packages\coveralls.io\1.4.2\tools\coveralls.net.exe --opencover coverage.xml -r %COVERALLS_REPO_TOKEN%
+  - cmd: C:\Users\appveyor\.nuget\packages\coveralls.io\1.4.2\tools\coveralls.net.exe --opencover coverage.xml -r %COVERALLS_REPO_TOKEN%
