@@ -4,19 +4,8 @@ nuget:
   disable_publish_on_pr: true
   
 build:
-  parallel: false
-  verbosity: detailed
+  parallel: true
+  verbosity: minimal
 
 before_build:
   - nuget restore
-
-environment:
-  COVERALLS_SERVICE_NAME: appveyor
-  COVERALLS_REPO_TOKEN:
-    secure: 0qr7lRh2yUaR4Hb2JhuNil52sx6glHMreIwvHL9c3hTekyvplMhesTuSuELXDJFT
-    
-after_test: 
-# generate report for NUnit testing framework:
-  - cmd: C:\Users\appveyor\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"C:\Users\appveyor\.nuget\packages\NUnit.ConsoleRunner\3.9.0\tools\nunit3-console.exe" -targetargs:"/domain:single Chapter1\bin\debug\netcoreapp2.1\Chapter1.dll" -output:coverage.xml
-# pass report to coveralls.io:
-  - cmd: C:\Users\appveyor\.nuget\packages\coveralls.io\1.4.2\tools\coveralls.net.exe --opencover coverage.xml -r %COVERALLS_REPO_TOKEN%
