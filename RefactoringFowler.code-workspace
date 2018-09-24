@@ -7,5 +7,7 @@
 			"path": "Chapter1.Tests"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"dotnet-test-explorer.testProjectPath": "../*.Tests/*.Tests.csproj"
+	}
 }

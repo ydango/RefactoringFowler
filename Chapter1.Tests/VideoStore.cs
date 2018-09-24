@@ -45,13 +45,6 @@ namespace Chapter1.Tests
                     implementation.Statement(_invoice, _plays));
             }
 
-            [Test]
-            public void RenderHtmlTest()
-            {
-                // Html was only introduced in VideoStore6SplitPhase
-                Assert.IsNotEmpty(new VideoStore6SplitPhase().HtmlStatement(_invoice, _plays));
-            }
-
             /// <summary>
             /// The book example passes in JSON. In C# it's much more natural to deal
             /// with classes but let's prove here that we could have consumed JSON
@@ -71,6 +64,15 @@ namespace Chapter1.Tests
                             JsonConvert.DeserializeObject<Invoice>(invoiceJson),
                             JsonConvert.DeserializeObject<Dictionary<string, Play>>(playsJson)));
             }
+
+            /// <summary>
+            /// A simple test that Html statements aren't broken
+            /// </summary>
+            [TestCaseSource(typeof(HtmlStatementImplementationProvider))]
+            public void RenderHtmlTest(IHtmlVideoStore implementation)
+            {
+                Assert.IsNotEmpty(implementation.HtmlStatement(_invoice, _plays));
+            }
         }
 
         #region privates
@@ -84,6 +86,20 @@ namespace Chapter1.Tests
                 yield return new VideoStore3ExtractMethod();
                 yield return new VideoStore4RemoveVariable();
                 yield return new VideoStore5RemoveLoops();
+                yield return new VideoStore6SplitPhase();
+                yield return new VideoStore7Polymorphism();
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                return GetEnumerator();
+            }
+        }
+
+        private class HtmlStatementImplementationProvider : IEnumerable<IHtmlVideoStore>
+        {
+            public IEnumerator<IHtmlVideoStore> GetEnumerator()
+            {
                 yield return new VideoStore6SplitPhase();
                 yield return new VideoStore7Polymorphism();
             }
