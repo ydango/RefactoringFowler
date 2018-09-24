@@ -10,7 +10,7 @@ namespace Chapter1
     /// <summary>
     /// Splitting the phases of calculating and formatting
     /// </summary>
-    public class VideoStore6SplitPhase : IVideoStore
+    public class VideoStore6SplitPhase : IVideoStore, IHtmlVideoStore
     {
         #region Corresponds to createStatementData.js 
 

@@ -49,4 +49,9 @@ namespace Chapter1
     {
         string Statement(Invoice invoice, IReadOnlyDictionary<string, Play> plays);
     }
+    public interface IHtmlVideoStore
+    {
+        string HtmlStatement(Invoice invoice, IReadOnlyDictionary<string, Play> plays);
+    }
+
 }
