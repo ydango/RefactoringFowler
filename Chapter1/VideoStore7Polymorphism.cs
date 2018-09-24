@@ -11,7 +11,7 @@ namespace Chapter1
     /// Reorganizing the calculations by Type
     /// </summary>
     /// 
-    public class VideoStore7Polymorphism : IVideoStore
+    public class VideoStore7Polymorphism : IVideoStore, IHtmlVideoStore
     {
         #region Corresponds to createStatementData.js 
 
