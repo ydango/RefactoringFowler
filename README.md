@@ -17,7 +17,7 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 * [NUnit](https://nunit.org) v3.10+
 
 ## Testing
-Unit testing is vital to refactoring and have been added. The convetion used is that ChapterN's tests are in project ChapterN.Tests
+Unit testing is vital to refactoring and have been added. The convention used is that the tests for *ChapterN* are in project *ChapterN.Tests*
 
 ## Installing
 ### Package Manager (for NUnit3 Test projects)
