@@ -30,6 +30,8 @@ Unit testing is vital to refactoring and have been added. The convetion used is 
 [Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
 
 [![Build status](https://ci.appveyor.com/api/projects/status/v3yc51dovaje1jpw/branch/master?svg=true)](https://ci.appveyor.com/project/ydango/refactoringfowler)
+
+[![Coverage Status](https://coveralls.io/repos/github/ydango/RefactoringFowler/badge.svg?branch=master)](https://coveralls.io/github/ydango/RefactoringFowler?branch=master)
   
 [![Build history](https://buildstats.info/appveyor/chart/ydango/refactoringfowler)](https://ci.appveyor.com/project/ydango/refactoringfowler/history)
 
