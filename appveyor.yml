@@ -4,8 +4,18 @@ nuget:
   disable_publish_on_pr: true
   
 build:
-  parallel: true
-  verbosity: minimal
+  parallel: false
+  verbosity: detailed
+  
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: 0qr7lRh2yUaR4Hb2JhuNil52sx6glHMreIwvHL9c3hTekyvplMhesTuSuELXDJFT
 
 before_build:
   - nuget restore
+  
+test_script:
+  - cmd: dotnet test "Chapter1.Tests\Chapter1.Tests.csproj" --configuration Debug --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[NUnit3.TestAdapter]*"
+
+after_test:
+  - cmd: C:\users\appveyor\.nuget\packages\coveralls.io\1.4.2\tools\coveralls.net.exe --opencover Chapter1.Tests\coverage.opencover.xml -r %COVERALLS_REPO_TOKEN%
