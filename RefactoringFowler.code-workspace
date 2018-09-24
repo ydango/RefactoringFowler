@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "Chapter1"
+		},
+		{
+			"path": "Chapter1.Tests"
 		}
-	]
+	],
+	"settings": {}
 }

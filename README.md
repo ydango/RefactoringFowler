@@ -17,13 +17,14 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 * [NUnit](https://nunit.org) v3.10+
 
 ## Testing
-Unit testing is vital to refactoring and have been added even where Fowler didn't include them (using a Class_Test.cs naming convention). In real life it's often better to separate Unit Tests into separate modules but for the purposes of learning from Fowler's book I think close proximity of the Test code to the Class under test helps.
+Unit testing is vital to refactoring and have been added. The convetion used is that ChapterN's tests are in project ChapterN.Tests
 
 ## Installing
-### Package Manager
+### Package Manager (for Test projects)
 * Install-Package NUnit -Version 3.10.1
 * Install-Package NUnit3TestAdapter -Version 3.10.0
 * Install-Package Microsoft.NET.Test.Sdk -Version 15.8.0
+* Install-Package coverlet.msbuild -Version 2.3.0
 
 ## Continuous Integration
 [Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
