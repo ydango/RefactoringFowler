@@ -20,11 +20,13 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 Unit testing is vital to refactoring and have been added. The convetion used is that ChapterN's tests are in project ChapterN.Tests
 
 ## Installing
-### Package Manager (for Test projects)
+### Package Manager (for NUnit3 Test projects)
 * Install-Package NUnit -Version 3.10.1
 * Install-Package NUnit3TestAdapter -Version 3.10.0
 * Install-Package Microsoft.NET.Test.Sdk -Version 15.8.0
+### Package Manager (for Coverage on Test projects)
 * Install-Package coverlet.msbuild -Version 2.3.0
+* Install-Package coveralls.io -Version 1.4.2
 
 ## Continuous Integration
 [Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
