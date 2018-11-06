@@ -14,7 +14,7 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 * Visual Studio 2017 v15.8+ 
 ### Dependencies
 * C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1.4+
-* [NUnit](https://nunit.org) v3.10+
+* [NUnit](https://nunit.org) v3.11+
 
 ## Testing
 Unit testing is vital to refactoring and have been added. The convention used is that the tests for *ChapterN* are in project *ChapterN.Tests*
