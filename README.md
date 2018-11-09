@@ -1,5 +1,5 @@
 # Refactoring Fowler
-A C# translation from JavaScript of the examples in Martin Fowler's ["Refactoring"](https://martinfowler.com/articles/refactoring-2nd-changes.html) :book:, 2nd Edition
+A C# translation from JavaScript of the examples in Martin Fowler's ["Refactoring"](https://martinfowler.com/articles/refactoring-2nd-changes.html) :book:, 2nd Edition. Watch a [podcast](https://www.infoq.com/podcasts/refactoring-evolutionary-architecture) about why the 2nd Edition was written.
 
 ## How the Code is translated
 The C# code follows the JavaScript as closely as possible
