@@ -27,6 +27,8 @@ Unit testing is vital to refactoring and have been added. The convention used is
 ### Package Manager (for Coverage on Test projects)
 * Install-Package coverlet.msbuild -Version 2.3.1
 * Install-Package coveralls.io -Version 1.4.2
+### Package Manager (for Coverity Static Scan Analysis)
+* Install-Package PublishCoverity -Version 0.11.0
 
 ## Continuous Integration
 [Appveyor](https://www.appveyor.com) using appveyor.yml for Visual Studio 2017
