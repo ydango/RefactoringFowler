@@ -7,6 +7,9 @@ build:
   parallel: true
   verbosity: minimal
   
+cache:
+  - '%LocalAppData%\NuGet\v3-cache' # NuGet v3  
+  
 environment:
   COVERALLS_REPO_TOKEN:
     secure: 0qr7lRh2yUaR4Hb2JhuNil52sx6glHMreIwvHL9c3hTekyvplMhesTuSuELXDJFT
