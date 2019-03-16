@@ -7,13 +7,13 @@ The C# code follows the JavaScript as closely as possible
 The C# code should be "good style", specifically [ReSharper](https://www.jetbrains.com/resharper) should have no warnings
 
 ## Target Environment
-.NET Core 2.1
+.NET Core 2.2
 
 ### Build
-* [Visual Studio Code](https://code.visualstudio.com) v1.28+ with [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.17+
-* Visual Studio 2017 v15.8+ 
+* [Visual Studio Code](https://code.visualstudio.com) v1.32+ with [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.17+
+* Visual Studio 2017 v15.9+ 
 ### Dependencies
-* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.1.4+
+* C# .NET Core using [SDK](https://www.microsoft.com/net/download) v2.2+
 * [NUnit](https://nunit.org) v3.11+
 
 ## Testing
@@ -21,11 +21,11 @@ Unit testing is vital to refactoring and have been added. The convention used is
 
 ## Installing
 ### Package Manager (for NUnit3 Test projects)
-* Install-Package NUnit -Version 3.11
-* Install-Package NUnit3TestAdapter -Version 3.10.0
-* Install-Package Microsoft.NET.Test.Sdk -Version 15.9.0
+* Install-Package NUnit -Version 3.11.0
+* Install-Package NUnit3TestAdapter -Version 3.13.0
+* Install-Package Microsoft.NET.Test.Sdk -Version 16.0.1
 ### Package Manager (for Coverage on Test projects)
-* Install-Package coverlet.msbuild -Version 2.3.1
+* Install-Package coverlet.msbuild -Version 2.6.0
 * Install-Package coveralls.io -Version 1.4.2
 
 ## Continuous Integration
