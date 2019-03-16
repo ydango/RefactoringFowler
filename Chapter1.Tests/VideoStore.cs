@@ -73,6 +73,15 @@ namespace Chapter1.Tests
                             JsonConvert.DeserializeObject<Invoice>(invoiceJson),
                             JsonConvert.DeserializeObject<Dictionary<string, Play>>(playsJson)));
             }
+
+            /// <summary>
+            /// A simple test that Html statements aren't broken
+            /// </summary>
+            [TestCaseSource(typeof(HtmlStatementImplementationProvider))]
+            public void RenderHtmlTest(IHtmlVideoStore implementation)
+            {
+                Assert.IsNotEmpty(implementation.HtmlStatement(_invoice, _plays));
+            }
         }
 
         #region privates
