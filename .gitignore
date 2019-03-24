@@ -4,3 +4,4 @@
 /Chapter1/obj
 /.vs
 /coverage.opencover.xml
+*.plog
