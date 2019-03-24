@@ -17,7 +17,12 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 * [NUnit](https://nunit.org) v3.11+
 
 ## Testing
-Unit testing is vital to refactoring and have been added. The convention used is that the tests for *ChapterN* are in project *ChapterN.Tests*
+Unit testing is vital to refactoring and have been added. 
+The convention used is that the tests for *ChapterN* are in project *ChapterN.Tests*
+
+## Static Analysis
+* [PVS-Studio](https://www.viva64.com/en/pvs-studio/) 7.01+ (No CI support currently)
+* [ReSharper](https://www.jetbrains.com/resharper/) 2018.3+ (No CI support currently)
 
 ## Installing
 ### Package Manager (for NUnit3 Test projects)
