@@ -10,7 +10,7 @@ The C# code should be "good style", specifically [ReSharper](https://www.jetbrai
 .NET Core 5.0
 
 ### Build
-* [Visual Studio Code](https://code.visualstudio.com) v1.32+ with [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.17+
+* [Visual Studio Code](https://code.visualstudio.com) v1.52+ with [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) v1.23+
 * Visual Studio 2019 v16.8+ 
 ### Dependencies
 * C# .NET Core using [SDK](https://www.microsoft.com/net/download) v5.0+
