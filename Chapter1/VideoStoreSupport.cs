@@ -13,10 +13,11 @@ namespace Chapter1
         Comedy
     }
 
+
     public class Play
     {
-        public readonly string Name;
-        public readonly PayType PayType;
+        public string Name { get; } 
+        public PayType PayType { get; }
 
         public Play(string name, PayType payType)
         {
@@ -27,8 +28,8 @@ namespace Chapter1
 
     public class Performance
     {
-        public readonly int Audience;
-        public readonly string PlayId;
+        public  int Audience { get; }
+        public  string PlayId { get; }
 
         public Performance(string playId, int audience)
         {
@@ -39,8 +40,8 @@ namespace Chapter1
 
     public class Invoice
     {
-        public readonly string Customer;
-        public readonly ImmutableList<Performance> Performances;
+        public string Customer { get; }
+        public ImmutableList<Performance> Performances { get; }
 
         public Invoice(string customer, IEnumerable<Performance> performances)
         {
