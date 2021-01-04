@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Text.Json.Serialization;
 
 namespace Chapter1
 {
@@ -42,11 +43,17 @@ namespace Chapter1
     {
         public string Customer { get; }
         public ImmutableList<Performance> Performances { get; }
-
-        public Invoice(string customer, IEnumerable<Performance> performances)
+        
+        [JsonConstructor] // JsonSerializer.Deserialize will use this ctor 
+        public Invoice(string customer, ImmutableList<Performance> performances)
         {
             Customer = customer;
-            Performances = performances.ToImmutableList();
+            Performances = performances;
+        }
+
+        public Invoice(string customer, IEnumerable<Performance> performances)
+        : this(customer, performances.ToImmutableList())
+        {
         }
     }
 

@@ -5,7 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using Newtonsoft.Json;
+using System.Text.Json;
 using NUnit.Framework;
 
 namespace Chapter1.Tests
@@ -66,16 +66,16 @@ namespace Chapter1.Tests
             [TestCaseSource(typeof(StatementImplementationProvider))]
             public void FromJsonRenderPlainTextTest(IVideoStore implementation)
             {
-                string invoiceJson = JsonConvert.SerializeObject(_invoice);
+                string invoiceJson = JsonSerializer.Serialize(_invoice);
 
-                string playsJson = JsonConvert.SerializeObject(_plays);
+                string playsJson = JsonSerializer.Serialize(_plays);
 
                 // Prove that if we worked from JSON and converted into of objects we would get same result
                 Assert.AreEqual(
                     implementation.Statement(_invoice, _plays),
                     implementation.Statement(
-                            JsonConvert.DeserializeObject<Invoice>(invoiceJson),
-                            JsonConvert.DeserializeObject<Dictionary<string, Play>>(playsJson)));
+                        JsonSerializer.Deserialize<Invoice>(invoiceJson),
+                            JsonSerializer.Deserialize<IImmutableDictionary<string, Play>>(playsJson)));
             }
         }
 
